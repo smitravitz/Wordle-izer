@@ -133,7 +133,8 @@ def main():
 	else:
 		full_match = partial_match.copy()
 
-
+	full_match = list(set(full_match))
+		
 	print("Matches (no yellow):\n{}\nlen:{}".format(temp_match, len(temp_match)))
 	print("Matches:\n{}\nlen:{}".format(full_match, len(full_match)))
 
